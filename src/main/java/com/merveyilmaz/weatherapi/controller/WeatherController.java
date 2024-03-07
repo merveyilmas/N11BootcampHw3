@@ -23,8 +23,7 @@ import static org.springframework.web.servlet.function.ServerResponse.badRequest
 @RestController
 @RequestMapping("/api/v1/weather")
 public class WeatherController {
-
-    //https://api.weatherapi.com/v1/forecast.json?q=london&days=7&key=6bd66926ba4e45caad7174519240603
+    
     @Value("${weather-api-base-url}")
     private String BASE_URL;
 
